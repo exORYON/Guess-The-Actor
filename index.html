@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Угадай актёра</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/png">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <hr>
+        <h1>Угадай актёра</h1>
+    
+    <div class="game-container">
+        <img src="images/Q.webp" draggable="false" id="needToGuess" alt="Photo of the actor">
+        <form  onsubmit="return false;">
+            <fieldset>
+                <legend id="round">Как его зовут?</legend>
+                <span id="A-text"><input type="radio" name="guessTheActor" value="A" class="pointer">Актёр 1</span><br>
+                <span id="B-text"><input type="radio" name="guessTheActor" value="B" class="pointer">Актёр 2</span><br>
+                <span id="C-text"><input type="radio" name="guessTheActor" value="C" class="pointer">Актёр 3</span><br>
+                <span id="D-text"><input type="radio" name="guessTheActor" value="D" class="pointer">Актёр 4</span><br>
+                <button id="submitButton" class="pointer" onclick="checkTheAnswer(); return false;">Играть!</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="collection-container">
+        <div class="slider-container">
+        <button id="slider-left" class="slider-button pointer" onclick="toLeft()"><</button>
+            <div class="slider">
+                    <div class="line" id="slider-line">
+                        <img src="images/hardy.jpg" class="slider-card" alt="Tom Hardy">
+                        <img src="images/jill.png" class="slider-card" alt="Jake Gyllenhaal">
+                        <img src="images/travolta.jpg" class="slider-card" alt="John Travolta">
+                        <img src="images/cruise.jpg" class="slider-card" alt="Tom Cruise">
+                        <img src="images/reeves.jpg" class="slider-card"  alt="Keanu Reeves">
+                        <img src="images/depp.jpg" class="slider-card" alt="Johnny Depp">
+                        <img src="images/bale.jpg" class="slider-card" alt="Christian Bale">
+                        <img src="images/dicaprio.jpg" class="slider-card" alt="Leonardo Dicaprio">
+                        <img src="images/pitt.jpg" class="slider-card" alt="Brad Pitt">
+                        <img src="images/travolta.jpg" class="slider-card" alt="John Travolta">
+                    </div>
+            </div>
+        <button id="slider-right" class="slider-button pointer disabled" onclick="toRight()" disabled = "true">></button>
+    </div>
+
+        <div class="all-list">
+                <img src="images/hardy.jpg" class="cards" alt="Tom Hardy">
+                <img src="images/jill.png" class="cards" alt="Jake Gyllenhaal">
+                <img src="images/willis.jpg" class="cards" alt="Bruce Willis">
+                <img src="images/reeves.jpg" class="cards" alt="Keanu Reeves">
+                <img src="images/cruise.jpg" class="cards" alt="Tom Cruise">
+
+                <img src="images/depp.jpg" class="cards" alt="Johnny Depp">
+                <img src="images/bale.jpg" class="cards" alt="Christian Bale">
+                <img src="images/dicaprio.jpg" class="cards" alt="Leonardo Dicaprio">
+                <img src="images/pitt.jpg" class="cards" alt="Brad Pitt">
+                <img src="images/travolta.jpg" class="cards" alt="John Travolta">
+        </div>
+    </div>
+</body>
+
+</html>
