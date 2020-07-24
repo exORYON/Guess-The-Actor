@@ -104,18 +104,17 @@ function checkTheAnswer() {
         💀 Game over 💀
         Ваше количество очков: ${points}
         Введите своё имя ниже для сохранения рекорда`, 'Ваше имя..');
-        if (name != null) {
+        if (name !== null && name !== 'Ваше имя..' && name !== "" && name !== " ") {
             //api.telegram.org/bot1279639951:AAH1PfQsWzGNa4MPN7DK8VyodQ1EmjSt18s/getUpdates
             let xhttp = new XMLHttpRequest();
             let message = `Пользователь ${name} набрал(а) ${points} очков.`;
             const url = 'https://api.telegram.org/bot1279639951:AAH1PfQsWzGNa4MPN7DK8VyodQ1EmjSt18s/sendMessage?chat_id=-1001341693208&text=';
             xhttp.open("GET", url + message, true);
             xhttp.send();
-            setTimeout(reload, 200);
+            points = 0;
         }
         else {
-            alert('else');
-            setTimeout(reload, 200);
+            points = 0;
         }
     }
 
