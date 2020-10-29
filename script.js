@@ -230,3 +230,7 @@ function toRight() {
     }
     document.getElementById('slider-line').style.left = slider + 'px';
 }
+
+function reload() {
+    location.reload();
+}
