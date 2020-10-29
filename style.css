@@ -1,190 +1,248 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
-    background-color: #FFB6C1; /*#DCDCDC*/
-    animation: loading 1.5s ease-out 0.1s;
+  background-color: #ffc8dd;
+  animation: loading 1.5s ease-out 0.1s;
+  font-family: "Neucha", cursive;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
 }
 
-h1 {
-    padding: 0;
-    margin: 10px 0 25px 0;
+.header {
+  background-color: #ffafcc;
+  height: 60px;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  box-shadow: 2px 4px 9px 0px rgba(0, 0, 0, 0.4);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  margin-top: -1px;
+}
+
+.header h1 {
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+.header img {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #submitButton {
-    margin-top: 7px;
-    margin-bottom: -3px;
-    margin-left: 5px;
-    font-weight: bold;
-    padding: 2px 15px 2px 15px;
-    border: 0.5px solid black;
-    border-radius: 4px;
-    background-color: #f8bac3ca;;
+  margin-top: 7px;
+  margin-bottom: -3px;
+  margin-left: 5px;
+  font-weight: bold;
+  padding: 2px 15px 2px 15px;
+  border: 0.5px solid black;
+  border-radius: 4px;
+  background-color: #ffafcc;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .cards {
-    width: 200px;
-    height: 200px;
-    border: 1px solid rgba(0, 0, 0, 0.274);
-    transition: all ease 1s;
-    margin-top: 5px;
-    margin-right: 5px;
-   
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  transition: all ease 1s;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 
 @keyframes loading {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .slider {
-width: 900px;
-border: 2px solid black;
-overflow: hidden;
-background-color: rgba(0, 0, 0, 0.548);
+  background-color: #ffc8dd;
+  width: 900px;
+  border: 2px solid black;
+  overflow: hidden;
 }
 
-.line img{
-    float: left;
-    margin: 0px;
-    padding: 0px;
+.line img {
+  float: left;
+  margin: 0px;
+  padding: 0px;
 }
 
 .line {
-    width: 1800px;
-    position: relative;
-    transition: all ease 1s;
-    left: 0;
+  width: 1800px;
+  position: relative;
+  transition: all ease 1s;
+  left: 0;
 }
 
 .line::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.collection-container {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .slider-button {
-    font-weight: bold;
-    margin: 5px;
+  font-weight: bold;
+  margin: 5px;
 }
 
 #slider-left {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  white-space: pre;
 }
 
 #slider-right {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .slider-card {
-    width: 180px;
-    height: 180px;
-    border: 1px solid rgba(0, 0, 0, 0.424);
+  width: 180px;
+  height: 180px;
+  border: 1px solid rgba(0, 0, 0, 0.424);
 }
 
 footer {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .game-container {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #f5bac2;
-    border: 1px solid black;
-    margin-left: 5px;
-    margin-right: 5px;
+  background-color: #ffafcc;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px 60px;
+  border-radius: 25px;
 }
 
 fieldset {
-    background-color:  #e9b3ba;
-    width: 300px;
+  background-color: #ffc8dd;
+  width: 300px;
 }
 
 #needToGuess {
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    transition: 0.5s ease;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: 0.5s ease;
 }
 
 .blured {
-    filter: blur(4px)
+  filter: blur(4px);
 }
 
 fieldset {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 .collection-container {
-    margin-top: 10px;
-    background-color: #f5bac2;
-    border: 1px solid black;
-    border-radius: 15px;
+  background-color: #ffafcc;
+  margin: 10px 10px;
+  border: 1px solid black;
+  border-radius: 15px;
 }
 
 .slider-container {
-    margin: 20px;
-    background-color: #e9b3ba;
-    border: 1px solid black;
-    height: 225px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 20px;
+  background-color: #ffc8dd;
+  border: 1px solid black;
+  height: 225px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .disabled {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 legend {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .all-list {
-    margin: 20px;
-    background-color: #e9b3ba;
-    border: 1px solid black;
-    position: relative;
-    padding-top: 5px;
+  margin: 20px;
+  background-color: #ffc8dd;
+  border: 1px solid black;
+  position: relative;
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .all-list img {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 h2 {
-    display: flex;
-    align-self: center;
+  display: flex;
+  align-self: center;
 }
 
-.game-container {
-    display: inline-block;
-    padding: 10px 50px;
-    margin: 0 5px;
+.footer {
+  background-color: #ffafcc;
+  height: 60px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  box-shadow: 2px -2px 6px 0px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
+@media (max-width: 1050px) {
+  .slider {
+    width: 540px;
+  }
+}
 
+@media (max-width: 670px) {
+  .slider {
+    width: 360px;
+  }
+}
+
+@media (max-width: 490px) {
+  .slider {
+    width: 180px;
+  }
+}
+
+@media (max-width: 450px) {
+  .game-container {
+    margin: 0 10px;
+    padding: 10px 25px;
+  }
+}
