@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #ffc8dd;
+  background-color: #fff;
   animation: loading 1.5s ease-out 0.1s;
   font-family: "Neucha", cursive;
   display: flex;
@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  background-color: #ffafcc;
+  background-color: #fff;
   height: 60px;
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
@@ -53,7 +53,7 @@ body {
   padding: 2px 15px 2px 15px;
   border: 0.5px solid black;
   border-radius: 4px;
-  background-color: #ffafcc;
+  background-color: #fff;
 }
 
 .pointer {
@@ -79,7 +79,7 @@ body {
 }
 
 .slider {
-  background-color: #ffc8dd;
+  background-color: #fff;
   width: 900px;
   border: 2px solid black;
   overflow: hidden;
@@ -133,7 +133,7 @@ footer {
 }
 
 .game-container {
-  background-color: #ffafcc;
+  background-color: #fff;
   border: 1px solid black;
   display: inline-block;
   padding: 10px 60px;
@@ -141,7 +141,7 @@ footer {
 }
 
 fieldset {
-  background-color: #ffc8dd;
+  background-color: #fff;
   width: 300px;
 }
 
@@ -163,7 +163,7 @@ fieldset {
 }
 
 .collection-container {
-  background-color: #ffafcc;
+  background-color: #fff;
   margin: 10px 10px;
   border: 1px solid black;
   border-radius: 15px;
@@ -171,7 +171,7 @@ fieldset {
 
 .slider-container {
   margin: 20px;
-  background-color: #ffc8dd;
+  background-color: #fff;
   border: 1px solid black;
   height: 225px;
   display: flex;
@@ -189,7 +189,7 @@ legend {
 
 .all-list {
   margin: 20px;
-  background-color: #ffc8dd;
+  background-color: #fff;
   border: 1px solid black;
   position: relative;
   padding-top: 5px;
@@ -209,7 +209,7 @@ h2 {
 }
 
 .footer {
-  background-color: #ffafcc;
+  background-color: #fff;
   height: 60px;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
