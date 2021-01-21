@@ -153,7 +153,6 @@ function checkTheAnswer() {
             document.getElementById('B-text').innerHTML = `<input type="radio" name="guessTheActor" value="B" class="pointer"> ${actors[used[1]].Имя} ${actors[used[1]].Фамилия}`;
             document.getElementById('C-text').innerHTML = `<input type="radio" name="guessTheActor" value="C" class="pointer"> ${actors[used[2]].Имя} ${actors[used[2]].Фамилия}`;
             document.getElementById('D-text').innerHTML = `<input type="radio" name="guessTheActor" value="D" class="pointer"> ${actors[used[3]].Имя} ${actors[used[3]].Фамилия}`;
-            console.log('Случайный порядок: ' + used);
             used = [];
             rightRadioAnswer = "A";
             break;
@@ -164,7 +163,6 @@ function checkTheAnswer() {
             document.getElementById('A-text').innerHTML = `<input type="radio" name="guessTheActor" value="A" class="pointer"> ${actors[used[1]].Имя} ${actors[used[1]].Фамилия}`;
             document.getElementById('C-text').innerHTML = `<input type="radio" name="guessTheActor" value="C" class="pointer"> ${actors[used[2]].Имя} ${actors[used[2]].Фамилия}`;
             document.getElementById('D-text').innerHTML = `<input type="radio" name="guessTheActor" value="D" class="pointer"> ${actors[used[3]].Имя} ${actors[used[3]].Фамилия}`;
-            console.log('Случайный порядок: ' + used);
             used = [];
             rightRadioAnswer = "B";
             break;
@@ -175,7 +173,6 @@ function checkTheAnswer() {
             document.getElementById('B-text').innerHTML = `<input type="radio" name="guessTheActor" value="B" class="pointer"> ${actors[used[1]].Имя} ${actors[used[1]].Фамилия}`;
             document.getElementById('A-text').innerHTML = `<input type="radio" name="guessTheActor" value="A" class="pointer"> ${actors[used[2]].Имя} ${actors[used[2]].Фамилия}`;
             document.getElementById('D-text').innerHTML = `<input type="radio" name="guessTheActor" value="D" class="pointer"> ${actors[used[3]].Имя} ${actors[used[3]].Фамилия}`;
-            console.log('Случайный порядок: ' + used);
             used = [];
             rightRadioAnswer = "C";
             break;
@@ -186,7 +183,6 @@ function checkTheAnswer() {
             document.getElementById('B-text').innerHTML = `<input type="radio" name="guessTheActor" value="B" class="pointer"> ${actors[used[1]].Имя} ${actors[used[1]].Фамилия}`;
             document.getElementById('C-text').innerHTML = `<input type="radio" name="guessTheActor" value="C" class="pointer"> ${actors[used[2]].Имя} ${actors[used[2]].Фамилия}`;
             document.getElementById('A-text').innerHTML = `<input type="radio" name="guessTheActor" value="A" class="pointer"> ${actors[used[3]].Имя} ${actors[used[3]].Фамилия}`;
-            console.log('Случайный порядок: ' + used);
             used = [];
             rightRadioAnswer = "D";
             break;
